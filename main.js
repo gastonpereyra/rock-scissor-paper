@@ -49,6 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('scissor').classList.remove("card-select");
         document.getElementById('paper').classList.add("card-select");
     }
+    document.getElementById('cheat').onclick = () => {
+        document.getElementById('comResult').innerHTML="<strong>by Gastón Pereyra</strong>";
+        games++;
+        wins++;
+        document.getElementById('comCard').src="./img/com.png";
+        document.getElementById('played').innerHTML= games;
+        document.getElementById('wins').innerHTML= wins;
+    }
     document.getElementById('play').onclick = () => {
         comSelect= comChoice();
         const result= gameResult(playerChoice, comSelect);

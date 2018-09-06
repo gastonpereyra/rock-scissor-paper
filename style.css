@@ -1,27 +1,53 @@
+:root {
+    font-size: 1.5vmax;
+}
 body {
     background: gray;
-    font-size: 1.5vmax;
 }
 #board {
     box-sizing: border-box;
     width: 90vw;
-    height: 100vh;
-    margin: 1em auto;
-    padding: 1em;
-    border: 2px solid #1b1b1b; 
+    height: 55rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 0.25rem solid #1b1b1b; 
     border-radius: 15px;
     background: #272525;
-    color: deeppink;
     text-align: center;
+}
+.message {
+    border: 0.25rem solid rgb(58, 58, 58);
+    border-radius: 20px;
+    box-shadow: 0.5rem 0.5rem rgba(0,0,0,0.4);
+}
+#title.message {
+    background:rgba(105, 105, 105, 0.8);
+    color: deeppink;
+}
+#player .message {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+    background: rgba(255, 20, 145, 0.9);
+    color: white;
+}
+#comPlay .message {
+    background: rgba(0, 250, 154, 0.9);
+    color: white;
+}
+#result .message {
+    background: rgba(65, 105, 225, 0.9);
+    color: white;
 }
 #title {
     text-decoration-line: underline;
-    word-spacing: 0.25em;
-    letter-spacing: 0.15em;
-    font-size: 3em;
+    word-spacing: 0.25rem;
+    letter-spacing: 0.15rem;
+    font-size: 3rem;
 }
+
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 #player {
     width: 80vw;
@@ -32,24 +58,24 @@ h2 {
     width: 15vw;
     height: 15vw;
     margin: auto;
-    padding: 0.25em;
-    border: 0.25em solid rgb(58, 58, 58);
+    padding: 0.25rem;
+    border: 0.25rem solid rgb(58, 58, 58);
     border-radius: 50%;
-    box-shadow: 0.5em 0.5em rgba(0,0,0,0.4);
+    box-shadow: 0.5rem 0.5rem rgba(0,0,0,0.4);
     background: rgba(255, 20, 145, 0.5);
     transition: all 0.5s;
 }
 .btn {
     display: block;
     width: 20vw;
-    height: 2em;
+    height: 4rem;
     margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    padding: 0.25em;
-    font-size: 2em;
-    border: 0.15em solid rgb(58, 58, 58);
-    box-shadow: 0.5em 0.5em rgba(0,0,0,0.4);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.25rem;
+    font-size: 2rem;
+    border: 0.15rem solid rgb(58, 58, 58);
+    box-shadow: 0.5rem 0.5rem rgba(0,0,0,0.4);
     background: rgba(255, 20, 145, 0.5);
     color: gray;
     transition: all 0.5s;
@@ -59,8 +85,8 @@ h2 {
     color: white;
 }
 .card:active, .btn:active {
-    transform: translateY(0.25em);
-    box-shadow: 0.3em 0.25em rgba(0,0,0,0.4);
+    transform: translateY(0.25rem);
+    box-shadow: 0.3rem 0.25rem rgba(0,0,0,0.4);
 }
 .card-select {
     background: indigo !important;
@@ -75,21 +101,20 @@ h2 {
 }
 #control {
     width: 80%;
-    height: 40vh;
+    height: 20rem;
     margin: auto;
     display: flex;
     align-items: center;
     justify-items: center;
+    font-size: 1.25rem;
 }
 #comPlay {
-    /*display: inline-block;*/
+    box-sizing: border-box;
     width: 40%;
     height: 100%;
     margin-right: 4%;
     margin-left: 4%;
     color: mediumspringgreen;
-    border: 4px solid black;
-    /*font-size: 2em;*/
 }
 #comPlay .card {
     background: rgba(0, 250, 154, 0.5);
@@ -98,50 +123,17 @@ h2 {
     background: rgba(0, 250, 154, 0.9);
 }
 #result {
-    /*display: inline-block;*/
+    box-sizing: border-box;
     width: 40%;
     height: 100%;
     margin-right: 4%;
     margin-left: 4%;
     color: royalblue;
-    border: 4px solid black;
-    /*font-size: 2em;*/
 }
 
-/*
-@media only screen and (max-width: 400px) {
-    body {
-        font-size: 12px;
-    }
-    #board {
-        height: 95vh;
-    }
-    #title {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 1.5em;
-    }
-    #comPlay, #result {
-        font-size: 1em;
-        width: 20vw;
-        margin: 5vw;
-    }
-    .btn {
-        font-size: 1em;
-        height: 2em;
-        margin-top: 5vh;
-    }
-}
 
-@media only screen and (max-height: 770px) {
+@media only screen and (max-width: 780px) {
     #board {
-        height: 150vh;
+        height: 60em;
     }
 }
-@media only screen and (max-height: 700px) {
-    #board {
-        height: 95vh;
-    }
-}
-*/
