@@ -1,0 +1,134 @@
+body {
+    background: gray;
+}
+#board {
+    box-sizing: border-box;
+    width: 90vw;
+    height: 100vh;
+    margin: 1em auto;
+    padding: 1em;
+    border: 2px solid #1b1b1b; 
+    border-radius: 15px;
+    background: #272525;
+    color: deeppink;
+    text-align: center;
+}
+#title {
+    width: 80%;
+    margin: auto;
+    text-decoration-line: underline;
+    word-spacing: 0.25em;
+    letter-spacing: 0.15em;
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+#player {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+}
+.card {
+    width: 15vw;
+    height: 15vw;
+    margin: auto;
+    padding: 0.25em;
+    border: 0.25em solid rgb(58, 58, 58);
+    border-radius: 50%;
+    box-shadow: 0.5em 0.5em rgba(0,0,0,0.4);
+    background: rgba(255, 20, 145, 0.5);
+    transition: all 0.5s;
+}
+.card:hover, .btn:hover {
+    background: rgba(255, 20, 145, 0.9);
+    color: white;
+}
+.card:active, .btn:active {
+    transform: translateY(0.25em);
+    box-shadow: 0.3em 0.25em rgba(0,0,0,0.4);
+}
+.card-select {
+    background: indigo !important;
+}
+.card-select:hover {
+    background: indigo !important;
+}
+.card-img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+}
+#comPlay {
+    display: inline-block;
+    width: 40vw;
+    margin-right: 1vw;
+    color: mediumspringgreen;
+}
+#comPlay .card {
+    background: rgba(0, 250, 154, 0.5);
+}
+#comPlay .card:hover {
+    background: rgba(0, 250, 154, 0.9);
+}
+#comResult {
+    font-size: 2em;
+}
+#result {
+    display: inline-block;
+    width: 40vw;
+    margin-left: 1vw;
+    color: royalblue;
+    font-size: 2em;
+}
+.btn {
+    display: block;
+    width: 20vw;
+    height: 2em;
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding: 0.25em;
+    font-size: 2em;
+    border: 0.15em solid rgb(58, 58, 58);
+    box-shadow: 0.5em 0.5em rgba(0,0,0,0.4);
+    background: rgba(255, 20, 145, 0.5);
+    color: gray;
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 12px;
+    }
+    #board {
+        height: 95vh;
+    }
+    #title {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    #comPlay, #result {
+        font-size: 1em;
+        width: 20vw;
+        margin: 5vw;
+    }
+    .btn {
+        font-size: 1em;
+        height: 2em;
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (max-height: 770px) {
+    #board {
+        height: 150vh;
+    }
+}
+@media only screen and (max-height: 700px) {
+    #board {
+        height: 95vh;
+    }
+}
