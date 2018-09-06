@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             case 2: draws++; break;
         };
         document.getElementById('comCard').src=comSelect.src;
+        document.getElementById('comResult').innerHTML=comSelect.name;
         document.getElementById('played').innerHTML= games;
         document.getElementById('wins').innerHTML= wins;
         document.getElementById('draws').innerHTML= draws;
