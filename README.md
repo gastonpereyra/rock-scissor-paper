@@ -9,5 +9,5 @@
 <h2>Link al Juego</h2>
 https://gastonpereyra.github.io/rock-scissor-paper/
 <h2>Autor</h2>
-<a href="https://twitter.com/gastonpereyra">HGastón Pereyra</a>
+<a href="https://twitter.com/gastonpereyra">Gastón Pereyra</a>
 <p>Para <a href="https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors">Odin Project</a></p>
