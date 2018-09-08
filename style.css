@@ -1,8 +1,13 @@
 :root {
     font-size: 1.5vmax;
+    font-family: 'Luckiest Guy', cursive;
 }
 body {
     background: gray;
+}
+header {
+    height: 100vh;
+    background: url('./img/logo.png') no-repeat center;
 }
 #board {
     box-sizing: border-box;
@@ -20,7 +25,7 @@ body {
     border-radius: 20px;
     box-shadow: 0.5rem 0.5rem rgba(0,0,0,0.4);
 }
-#title.message {
+#title_board.message {
     background:rgba(105, 105, 105, 0.8);
     color: deeppink;
 }
@@ -39,7 +44,8 @@ body {
     background: rgba(65, 105, 225, 0.9);
     color: white;
 }
-#title {
+.title {
+    text-align: center;
     text-decoration-line: underline;
     word-spacing: 0.25rem;
     letter-spacing: 0.15rem;

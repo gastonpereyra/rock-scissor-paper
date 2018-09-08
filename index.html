@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rock, Scissor, Paper!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/com.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet"> 
     <script src="main.js"></script>
 </head>
 <body>
+    <header>
+        <h1 id="title" class="title message">Piedra! Papel! Tijeras!</h1>
+    </header>
     <main id="board">
-        <h1 id="title" class="message">Rock! Scissor! Paper!</h1>
+        <h1 id="title_board" class="title message">Comenzemos a Jugar!</h1>
         <div id="player">
-            <h2 class="message">You Choose!</h2>
+            <h2 class="message">Tu Eliges!</h2>
             <button id="rock" class="card"><img class="card-img"src="./img/rock-icon-grey.png" alt="Rock"></button>
             <button id="scissor" class="card"><img class="card-img"src="./img/scissors-icon-grey.png" alt="Scissor"></button>
             <button id="paper" class="card"><img class="card-img"src="./img/paper-icon-grey.png" alt="Paper"></button>
@@ -20,17 +25,17 @@
         </div>
         <div id="control">
             <div id="comPlay">
-                <h2 class="message">COM Choice:</h2>
-                <p id="comResult">Waiting...</p>
+                <h2 class="message">Nosotros:</h2>
+                <p id="comResult">Esperando...</p>
                 <button id="cheat" class="card"><img id="comCard" class="card-img" src="./img/com.png" alt="Nothing"></button>
                 
             </div>
             <div id="result">
-                <h2 class="message">Results:</h2>
-                <p>Games: <span id="played"></span></p>
-                <p>Win: <span id="wins"></span></p>
-                <p>Draws: <span id="draws"></span></p>
-                <p>Losses: <span id="losses"></span></p>
+                <h2 class="message">Resultados:</h2>
+                <p>Juego: <span id="played"></span></p>
+                <p>Ganados: <span id="wins"></span></p>
+                <p>Empate: <span id="draws"></span></p>
+                <p>Perdido: <span id="losses"></span></p>
             </div>
         </div>
     </main>
